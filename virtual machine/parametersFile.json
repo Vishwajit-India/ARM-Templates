@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "vmadmin"
+    },
+    "adminPassword": {
+      "value": "Password12345"
+    },
+    "dnsLabelPrefix": {
+      "value": "vishwa-vm-fo3j7be2tcfzy"
+    },
+    "publicIpName": {
+      "value": "myPublicIP"
+    },
+    "publicIPAllocationMethod": {
+      "value": "Dynamic"
+    },
+    "publicIpSku": {
+      "value": "Basic"
+    },
+    "OSVersion": {
+      "value": "2022-datacenter-azure-edition"
+    },
+    "vmSize": {
+      "value": "Standard_B2s"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "vmName": {
+      "value": "vishwa-vm"
+    },
+    "securityType": {
+      "value": "TrustedLaunch"
+    }
+  }
+}

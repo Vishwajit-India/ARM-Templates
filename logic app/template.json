@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": { 
+    "LogicAppName": {
+            "type": "String"
+        },
+        "location": {
+            "type": "String"
+        },
+         "LogicAppIntegrationAccount": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "/subscriptions/2a9b5030-9efd-45b2-b42d-0ea18c04c9b7/resourceGroups/vishwajit/providers/Microsoft.Insights/components/logicappcicdrun"
+
+    }
+      },
+  "functions": [],
+  "variables": {},
+  "resources": [{
+    "LogicAppName":"[parameters('LogicAppName')]",
+    "type": "Microsoft.Logic/workflows",
+    "apiVersion": "2017-07-01",
+    "location": "[parameters('location')]",
+    "properties": {
+      "definition": {
+        "$schema": "https://schema.management.azure.com/schemas/2016-06-01/Microsoft.Logic.json",
+        "contentVersion": "1.0.0.0",
+        "parameters": {},
+        "triggers": {},
+        "actions": {},
+        "outputs": {}
+      },
+      "parameters": {}
+    }
+  }],
+  "outputs": {}
+}
